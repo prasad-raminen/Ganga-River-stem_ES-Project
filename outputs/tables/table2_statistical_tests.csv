@@ -1,0 +1,5 @@
+hypothesis,test,sample_size,metric_val,p_value,significance
+H1: Riparian Population Density increases river BOD organic loading,Spearman Rank Correlation,48,-0.5201314470353002,0.00015115132301504774,Statistically Significant (p < 0.05)
+H2: Riparian Population Density elevates Fecal Coliform bacterial counts,Spearman Rank Correlation,48,0.318610037488689,0.02730855235095811,Statistically Significant (p < 0.05)
+H3: Downstream tributary flow expansion dilutes BOD concentration,Spearman Rank Correlation,48,-0.013326175089667726,0.9283693218111787,Assimilative Dilution Observed
+H4: Maha Kumbh mass bathing increases annual maximum BOD at Sangam,Mann-Whitney U Test (Non-parametric),"Event=2, Baseline=9",8.0,0.9057582547586784,Acute spike smoothed in annual envelope (p > 0.05)

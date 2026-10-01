@@ -1,0 +1,6 @@
+spatial_order,station_name,town,flow_cms,pop_density,do_mean,do_min,bod_mean,bod_max,fecal_mean,fecal_max,records_count,class_b_compliance
+0,Ganga at Har-Ki-Pauri Ghat,Haridwar,566.129,4676.091,8.541666666666666,7.1,0.7758333333333334,1.04,112.33333333333333,170.0,6,Complies (Class B)
+1,Ganga at Jajmau Bridge,Kanpur,998.924,2155.8525454545456,8.454545454545455,2.8,3.6772727272727277,6.3,5091.090909090909,17000.0,11,"Fails (DO Deficit, BOD Excess, Coliform Severe)"
+2,Ganga at Sangam,Prayagraj,3061.94,4551.160545454546,8.30909090909091,4.7,3.399090909090909,9.2,9725.818181818182,33000.0,11,"Fails (DO Deficit, BOD Excess, Coliform Severe)"
+3,Ganga at Malviya Bridge,Varanasi,3266.807,3849.6567999999997,7.669,6.1,3.3899999999999997,6.1,24192.0,49000.0,10,"Fails (BOD Excess, Coliform Severe)"
+4,Ganga at Gandhi Ghat,Patna,10040.13,5936.7834,8.104000000000001,6.5,2.09,3.0,309518.2,1700000.0,10,Fails (Coliform Severe)
