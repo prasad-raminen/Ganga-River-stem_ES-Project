@@ -1,0 +1,9 @@
+First -> Creating the cpcb_wq from years 2025 to 2010
+
+River Flow Data for the Ganga Basin is classified as restricted by the Central Water Commission (CWC) due to transboundary river policy limitations. Discharges are hidden on the India-WRIS portal.
+
+Downloaded two zips (Hydro River and Hydro Basins)
+
+Population grows slowly (so choosen data differing 5 years each from 2000 to 2025 i.e, 2000,2005,2010,2015,2020) , No 2025 b'coz india census delayed.
+
+created a events.csv file to store the links of 6 events.
