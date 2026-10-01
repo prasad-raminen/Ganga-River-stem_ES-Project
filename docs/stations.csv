@@ -1,6 +1,4 @@
-,,,,,,
 Station_name,Town,State,Latitude,longitude,Years_available,Parameters_available
-,,,,,,
 Ganga at Har-Ki-Pauri Ghat,Haridwar,Uttarakhand,29.965,78.17,2012-2022,"Temp,DO,pH,Conductivity,BOD,Nitrate,Coliform"
 Ganga at Jajmau Bridge,Kanpur,Uttar Pradesh,26.471,80.407,2012-2022,"Temp,DO,pH,Conductivity,BOD,Nitrate,Coliform"
 Ganga at Sangam,Prayagraj,Uttar Pradesh,25.428,81.887,2012-2022,"Temp,DO,pH,Conductivity,BOD,Nitrate,Coliform"

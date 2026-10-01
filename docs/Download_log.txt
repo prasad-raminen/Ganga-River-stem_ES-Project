@@ -1,4 +1,4 @@
-First -> Creating the cpcb_wq from years 2025 to 2010
+First -> Creating the cpcb_wq from years 2025 to 2010(no files were published before 2010)  ->"Observed discharge restricted by CWC. Used season (proxy for flow) and HydroRIVERS average discharge (modelled)."
 
 River Flow Data for the Ganga Basin is classified as restricted by the Central Water Commission (CWC) due to transboundary river policy limitations. Discharges are hidden on the India-WRIS portal.
 
