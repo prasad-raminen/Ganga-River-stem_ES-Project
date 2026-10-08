@@ -1,0 +1,13 @@
+Station,Parameter,Pre_Mean,Post_Mean,Pct_Change,Direction,Mann_Whitney_U,p_value,Significant
+Kanpur,BOD Max,4.55,4.6,1.1,↑ Worsened,15.0,0.9242,No
+Kanpur,DO Min,5.32,6.07,14.0,↓ Improved,13.5,1.0,No
+Kanpur,Fecal Coliform Max,1025.5,7414.29,623.0,↑ Worsened,2.0,0.0294,Yes
+Prayagraj,BOD Max,6.48,3.55,-45.2,↓ Improved,25.5,0.0368,Yes
+Prayagraj,DO Min,6.58,7.13,8.4,↓ Improved,10.0,0.5074,No
+Prayagraj,Fecal Coliform Max,6638.5,11490.0,73.1,↑ Worsened,6.0,0.1636,No
+Varanasi,BOD Max,5.13,2.98,-41.9,↓ Improved,15.0,0.3833,No
+Varanasi,DO Min,6.7,7.28,8.7,↓ Improved,7.5,0.5676,No
+Varanasi,Fecal Coliform Max,11306.67,29714.29,162.8,↑ Worsened,5.0,0.2472,No
+Patna,BOD Max,2.93,1.66,-43.5,↓ Improved,19.0,0.0599,No
+Patna,DO Min,7.23,7.64,5.7,↓ Improved,13.0,0.6445,No
+Patna,Fecal Coliform Max,5394.0,439857.14,8054.6,↑ Worsened,0.0,0.0222,Yes

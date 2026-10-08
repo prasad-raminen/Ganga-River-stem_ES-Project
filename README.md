@@ -67,6 +67,14 @@ We examine the longitudinal environmental gradient of the river across **5 strat
   - Computes all statistical tests and outputs CSV tables
   - Generates 5 publication-ready charts (300 DPI)
 
+### 6. Enhanced Analysis Module (`src/enhanced_analysis.py`)
+- **Water Quality Index (WQI):** Implemented NSF-WQI adapted methodology with weighted sub-indices (DO 31%, Fecal Coliform 30%, BOD 23%, pH 16%) to produce a single composite score (0–100) per station per year.
+- **Multi-Dimensional Pressure Profiling:** Constructed radar/spider chart overlays comparing 6 normalized pressure axes (BOD Load, DO Deficit, Pathogen Risk, Population Pressure, Dilution Deficit, Nutrient Load) across all 5 stations.
+- **Namami Gange Policy Impact Assessment:** Pre-vs-Post (2012–2015 vs 2017–2024) paired Mann-Whitney U tests with percentage change analysis for BOD, DO, and Fecal Coliform at every station.
+- **Coliform Exceedance Ratio Analysis:** Computed the ratio of observed fecal coliform to CPCB safe limit (2500 MPN/100mL) showing each station's departure from safety over time.
+- **Regulatory Compliance Dashboard:** Traffic-light heatmap showing % compliance across DO, BOD, Fecal Coliform, and pH parameters per station.
+- Generates 5 additional publication-ready figures (Fig 6–10) and 2 new statistical tables (Table 4–5).
+
 ---
 
 ## 📊 Summary of Key Findings
@@ -154,11 +162,18 @@ Ganga-River-stem_ES-Project/
 - **Figure 3 (`fig3_demographics_vs_pollution.png`):** Scatter plots and Spearman correlation fits linking riparian population density with organic load (BOD) and pathogen counts (Fecal Coliform).
 - **Figure 4 (`fig4_hydrology_assimilative_capacity.png`):** Modeled river discharge vs BOD concentration highlighting dilution capacity, alongside estimated total organic mass flux ($BOD \times Q$).
 - **Figure 5 (`fig5_religious_events_impact.png`):** Boxplot and strip plot distributions comparing Kumbh Mela event years against non-event baseline years at Prayagraj Sangam and Haridwar.
+- **Figure 6 (`fig6_water_quality_index_heatmap.png`):** Station × Year heatmap showing composite Water Quality Index (WQI) scores using NSF-WQI adapted methodology with weighted sub-indices for DO, Fecal Coliform, BOD, and pH.
+- **Figure 7 (`fig7_environmental_pressure_radar.png`):** Radar/spider chart comparing multi-dimensional environmental pressure profiles (BOD Load, DO Deficit, Pathogen Risk, Population Pressure, Dilution Deficit, Nutrient Load) across all 5 stations.
+- **Figure 8 (`fig8_namami_gange_policy_impact.png`):** Pre-vs-Post Namami Gange (2014) paired boxplot comparisons for BOD, DO, and Fecal Coliform at each station.
+- **Figure 9 (`fig9_coliform_exceedance_analysis.png`):** Fecal coliform exceedance ratio timeline and average exceedance bar chart showing departure from CPCB 2500 MPN safe limit.
+- **Figure 10 (`fig10_compliance_dashboard.png`):** Traffic-light compliance dashboard showing percentage of monitoring years meeting each CPCB Class B parameter threshold.
 
 ### Analytical Tables (`outputs/tables/`)
 - **Table 1 (`table1_station_baseline.csv`):** Comprehensive baseline metrics, discharge values, mean population densities, and formal regulatory compliance verdicts.
 - **Table 2 (`table2_statistical_tests.csv`):** Formal hypothesis tests, Spearman $\rho$, Mann-Whitney $U$, sample sizes, and p-values.
 - **Table 3 (`table3_environmental_cause_effect_mitigation.csv`):** Environmental science cause-and-effect matrix linking observed parameters to microbial processes, ecological/public health impacts, and targeted engineering mitigations.
+- **Table 4 (`table4_water_quality_index.csv`):** Composite WQI scores (mean, min, max, latest) and quality category classification per station.
+- **Table 5 (`table5_namami_gange_impact.csv`):** Pre-vs-Post Namami Gange statistical comparison with Mann-Whitney U test results, percentage change, and significance verdicts per station per parameter.
 
 ---
 
@@ -173,14 +188,26 @@ pip install numpy pandas scipy matplotlib seaborn
 ### Reproduce Analysis and Figures
 From the repository root directory, run:
 ```bash
+# Step 1: Run core pipeline (Figures 1–5, Tables 1–3)
 python3 src/midsem_es_analysis.py
+
+# Step 2: Run enhanced analysis (Figures 6–10, Tables 4–5)
+python3 src/enhanced_analysis.py
 ```
-This executes all 5 stages in sequence:
+
+**Core Pipeline (Step 1)** executes all 5 stages:
 1. Cleans CPCB annual water quality data $\to$ `data/processed/wq_annual_clean.csv`
 2. Generates annual population interpolations $\to$ `data/processed/station_population_interpolated.csv`
 3. Integrates all domains $\to$ `data/processed/wq_es_integrated_master.csv`
 4. Runs statistical tests and writes summary tables $\to$ `outputs/tables/`
-5. Plots and saves all 5 figures at 300 DPI $\to$ `outputs/figures/`
+5. Plots and saves Figures 1–5 at 300 DPI $\to$ `outputs/figures/`
+
+**Enhanced Analysis (Step 2)** generates:
+6. Water Quality Index (WQI) heatmap $\to$ `fig6`
+7. Multi-dimensional pressure radar chart $\to$ `fig7`
+8. Namami Gange policy impact assessment $\to$ `fig8`
+9. Coliform exceedance ratio analysis $\to$ `fig9`
+10. Regulatory compliance dashboard $\to$ `fig10`
 
 ---
 
